@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Github Gist logo fixer",
+  "description": "Splits the top left Github|Gist logo into two URLS - the 'Github' part goes to Github, and 'Gist' goes to Gist.",
+  "version": "1.0",
+  "permissions": [
+    "https://gist.github.com/*"
+  ],
+  "content_scripts": [{
+    "matches": [
+        "https://gist.github.com/*"
+      ],
+      "js": [
+        "jquery-2.1.0.min.js",
+        "github-inject.js"
+      ],
+      "run_at": "document_end"
+  }]
+}

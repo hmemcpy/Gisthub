@@ -3,7 +3,7 @@
 
   "name": "Github Gist logo fixer",
   "description": "Splits the top left Github|Gist logo into two URLS - the 'Github' part goes to Github, and 'Gist' goes to Gist.",
-  "version": "1.0",
+  "version": "1.0.1",
   "permissions": [
     "https://gist.github.com/*"
   ],

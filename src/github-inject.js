@@ -1,9 +1,17 @@
 // Please make this better, send a PR! :)
 
-$('.octicon-logo-github').on('click', function () {
-     jQuery(".header-logo-wordmark").attr('href', 'http://github.com');
-});
+(function(){
+  "use strict";
 
-$('.octicon-logo-gist').on('click', function () {
-     jQuery(".header-logo-wordmark").attr('href', 'http://gist.github.com');
-});
+  var githubLogo = document.querySelector('.octicon-logo-github');
+  var gistLogo = document.querySelector('.octicon-logo-gist');
+  var link = githubLogo.parentElement;
+
+  githubLogo.addEventListener('click', function(){
+    link.href = 'http://github.com';
+  });
+
+  gistLogo.addEventListener('click', function(){
+    link.href = 'http://gist.github.com';
+  });
+})();

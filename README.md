@@ -1,5 +1,3 @@
-# GistHub
-
 ![](http://i.imgur.com/2DriSix.png)
 
 This Chrome extension fixes a personal annoyance of mine: the top-left logo on the [GitHub Gist](https://gist.github.com/) site takes to Gist home, instead of GitHub home.
